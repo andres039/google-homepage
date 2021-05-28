@@ -3,7 +3,7 @@ body {
     width: 100vw;
 }
 main {
-    background-color: FFFFFF;
+    background-color: white;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -13,15 +13,15 @@ main {
 }
 #searchbar {
     box-sizing: border-box;
-    border: 0.5rem solid E5E6E9;
+    border: 0.1rem solid rgb(229, 230, 233);
     border-radius: 13rem;
     height: 2.8rem;
     width: 35rem;
     
 }
 #logoandsearch {
-    display: grid;
     place-items: center;
+    display: grid;
     gap: 1.5em;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -47,3 +47,31 @@ main {
 #lupa {
     align-self: center;
 }
+ul {
+display: flex;
+flex-flow: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#sign-in {
+    background-color: RGB(68, 132, 241);
+    color: RGB(228, 237, 253);
+}
+#apps {
+    color: dimgrey;
+}
+footer {
+    background-color: whitesmoke;
+    color: RGB(116, 119, 123);
+    height: 3rem;
+    border-top: 1px solid RGB(228, 228, 228);
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0.3
+    }
+    #footlist {
+        padding: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+    }
