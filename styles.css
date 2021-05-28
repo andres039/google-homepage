@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    background-color: FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2.1fr;
+}
+#searchbar {
+    box-sizing: border-box;
+    border: 0.5rem solid E5E6E9;
+    border-radius: 13rem;
+    height: 2.8rem;
+    width: 35rem;
+    
+}
+#logoandsearch {
+    display: grid;
+    place-items: center;
+    gap: 1.5em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#searchbar :hover {
+    border: none;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#search, #lucky {
+    background-color: F1F1F1;
+    color: F3F3F3;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+#lupa {
+    align-self: center;
+}
