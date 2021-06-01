@@ -1,112 +1,130 @@
-body {
-    height: 100%;
-    width: 100%; 
-    padding: 10px;
-    display: grid;
-    grid-template: 1fr 3fr 1fr/1fr;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-main {
-    background-color: white;
-    height: 100%;
-    width: 100%;
+input {
+    appearance: none;
+}
+button {
+    appearance: none;
+}
+body {
+    box-sizing: border-box;
     display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+    max-width: 100vw;
+    font-family: 'Roboto';
+
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100vw;
+    justify-content: space-between;
+    grid-row: 1;
+    align-items: baseline;
+    padding: 1.5em;
+}
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#navlist1, #navlist2 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    width: 45%;
+}
+#navlist2 {
+    justify-content: end;
+    align-items: baseline;
+}
+#apps {
+    fill: grey;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+
+}
+#apps :hover {
+    fill: black;
+    cursor: pointer;
+    height: 1.5rem;
+}
+#sign-in {
+    background-color: RGB(68, 132, 241);
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;  
+}
+#sign-in:hover{
+    border-bottom: 1em #70A3F6;
+    cursor: pointer;
 }
 #logoandsearch {
-    display: grid;
-    gap: 0.2rem;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-template-rows: 1fr 1fr 1fr;
-    place-items: center;
-    
+    grid-row: 2;
+    display: flex;
+    flex-flow:column wrap;
+    place-self: center;
+    gap: 2rem;
+    justify-content: center;
 }
-#googlelogo {
-    grid-row-start: 1;
+#google {
+    place-self: center;
+}
+#magnifier{
+    fill:rgb(229, 230, 233);
+    z-index: auto;
 }
 #searchbar {
-    box-sizing: border-box;
+    width: 25rem;
+    place-self: center;
     border: 0.1rem solid rgb(229, 230, 233);
     border-radius: 13rem;
     height: 2.8rem;
-    width: 35rem;   
-    grid-column-start: 1;
-    grid-row-start: 2;
+    background-image: url(search_black_24dp.svg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 }
-
-#searchbar:hover {
+#searchbar :hover {
     border: none;
     box-shadow: 1px 1px 5px 1px #DDDDDD
 }
 #buttons {
-    display: flex;
-    justify-content:space-around;
-
-    width: 19rem;
-    grid-row: 3/4;
-    grid-column: 3/4
-    align-self: center;
+    place-self: center;   
 }
 #search, #lucky {
-        background-color: RGB(241, 241, 241);
-        color: #65696D;
-        border: none;
-        border-radius: 7px;
-        padding: 0.7rem 1rem;
+    background-color: whitesmoke;
+    color: #343434;
+    border: none;
+    border-radius: 7px;
+    padding: 0.7rem 1rem;
 }
 #lucky:hover, #search:hover {
     border: 1px solid #DDDDDD;
-    color: #343434;
-    background-color: #f2f2f2;
-    box-shadow: 1px 1px 1px 1px 1px #E9E9E9;
-}
-ul {
-display: flex;
-flex-flow: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#sign-in {
-    background-color: RGB(68, 132, 241);
-    color: RGB(228, 237, 253);
-}
-#apps {
-    color: dimgrey;
+    cursor: pointer;
 }
 footer {
-    
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    grid-row: 3;   
+    max-width: 100vw; 
     background-color: whitesmoke;
-    color: RGB(116, 119, 123);
-    height: 3rem;
-    border-top: 1px solid RGB(228, 228, 228);
-    justify-content: space-evenly;
-    padding: 0.3rem;
-    grid-row-start: 3;
-
-    }
-#footlist {
-        padding: 0.3rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    #navlist {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        color: #2f2f2f;
-    }
-    #footlist1, #footlist2, #navlist1, #navlist2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 1rem;
-    }
-   
-
-    
+    height: 4rem;
+    align-self: end;
+    align-content: center;
+    padding: 0 1.5em 0 1.5em;
+}
+#footlist1, #footlist2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-end;
+} 
+ul {
+    list-style: none;
+}
