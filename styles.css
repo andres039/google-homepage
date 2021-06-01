@@ -62,8 +62,9 @@ li:hover {
     font-weight: bold;  
 }
 #sign-in:hover{
-    border-bottom: 1em #70A3F6;
+    box-shadow: 1em #70A3F6;
     cursor: pointer;
+    box-shadow: 0px 2px 1px #70A3F6;
 }
 #logoandsearch {
     grid-row: 2;
@@ -81,6 +82,8 @@ li:hover {
     z-index: auto;
 }
 #searchbar {
+    outline: none;
+    padding-left: 40px;
     width: 25rem;
     place-self: center;
     border: 0.1rem solid rgb(229, 230, 233);
